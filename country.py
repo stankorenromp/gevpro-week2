@@ -7,7 +7,7 @@ class Country:
 		return self.naam
 		
 	def __str__(self):
-		return "{0} {1}".format("Hello from",self.naam)
+		return "{} {}".format("Hello from",self.naam)
 		
 def main():
 	nl = Country("Netherlands")
