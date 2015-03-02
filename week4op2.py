@@ -13,6 +13,7 @@ def main():
 		landclassificatie = lijst[1]
 		woorden1 = lijst[2].split(',')
 		woorden2 = lijst[3].split(',')
+		"""Voeg elementen van land aan named tuple 'Land' toe als woord1 (bloedwoord) zich in woorden2 (sterfwoorden) bevindt"""
 		[lijstlijst.append(Land(landnaam,landclassificatie,woorden1,woorden2)) for woord1 in woorden1 if woord1 in woorden2]
 	print(lijstlijst)
 	
