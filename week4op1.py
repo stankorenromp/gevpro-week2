@@ -14,7 +14,6 @@ def main(argv):
 		"""Checks if f0end and f0start are both between tophz and bottomhz
 		if this is not the case, it deletes the whole child""" 
 		if not (bottomhz < f0end < tophz) or not (bottomhz < f0start < tophz):
-			print(child[5].text,child[7].text,child[12].text,child[13].text)
 			root.remove(child)
 	tree.write(argv[2])
 
